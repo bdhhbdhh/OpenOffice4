@@ -1,6 +1,6 @@
 #!/bin/sh
 
 echo "Starting soffice daemon in headless mode as user $(whoami) [id $(id)]"
-echo -e "\t soffice daemon will listen on Port $SOFFICE_DAEMON_PORT"
+echo -e "\t soffice daemon will listen on Port $OPENOFFICE_DAEMON_PORT"
 
-/opt/openoffice4/program/soffice "-accept=socket,host=0.0.0.0,port=$SOFFICE_DAEMON_PORT;urp;StarOffice.ServiceManager" -nologo -headless -nofirststartwizard
+/opt/openoffice4/program/soffice "-accept=socket,host=0.0.0.0,port=$OPENOFFICE_DAEMON_PORT;urp;StarOffice.ServiceManager" -nologo -headless -nofirststartwizard
